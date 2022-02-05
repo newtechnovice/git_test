@@ -1,3 +1,4 @@
 # git_test
-This is my first GitHub repo 💻
+This is my first git push 💻
+
 Hello Odin.
