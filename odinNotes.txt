@@ -1,0 +1,17 @@
+✅ Foundation 
+Elements on an HTML page are just information wrapped in an 
+opening and closing HTML tags. 
+
+Paragraph element:
+
+<p> insert content here </p>
+⬆           ⬆           ⬆
+opening     content       closing
+
+There are some HTML elements that do not have a closing tags
+called empty elements because they don't wrap any content. 
+
+📝 Semantic HTML:
+Using correct tags can help sites rank better in search engines
+and make them accessible to users relying on assistive tech. 
+
