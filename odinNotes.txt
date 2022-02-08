@@ -15,3 +15,7 @@ called empty elements because they don't wrap any content.
 Using correct tags can help sites rank better in search engines
 and make them accessible to users relying on assistive tech. 
 
+📝 Always name the HTML file that will contain the homepage of your
+website index.html because web servers by dafault will look for it 
+when users land on your website.
+
