@@ -19,3 +19,19 @@ and make them accessible to users relying on assistive tech.
 website index.html because web servers by dafault will look for it 
 when users land on your website.
 
+
+✅ Working with Text
+- Using the correct level of heading is important as levels provide
+a hierarchy to the content; h1 heading for overall page, lower
+headings for content in smaller sections of the page.
+
+- <strong> bold </strong> semantically marks text as important and 
+affects assistive tools like screen readers.
+
+- <em> italic </em> semantically places emphasis on text
+
+- <!-- --> comment
+
+📝 Use indentation to make the level of nesting clear and readable; it
+is recommended to indent any child elements by 2 spaces.
+
