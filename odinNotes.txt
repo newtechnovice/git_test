@@ -35,3 +35,58 @@ affects assistive tools like screen readers.
 📝 Use indentation to make the level of nesting clear and readable; it
 is recommended to indent any child elements by 2 spaces.
 
+
+✅ Lists
+<ul>
+    <li>this is an</li>
+    <li>UNORDERED LIST</li>
+    <li>order doesn't matter</li>
+</ul>
+
+<ol>
+    <li>this is an</li>
+    <li>ORDERED LIST</li>
+    <li>order matters</li>
+</ol>
+
+
+✅ Links and Images
+<a> Anchor Element </a>
+- It works when you give it an attribute -- additional information such
+as destination -- which goes in the elements opening tags.
+
+<a href = "link destination"> Click Here </a>
+    ⬆
+    hyperlink reference attribute; value should be the destination 
+    we want the link to go to
+
+
+📝 Absolute Links ➡️ links pages on OTHER websites 
+
+https:// www.theodinproject.com /about
+⬆                ⬆              ⬆
+protocol        domain           path
+
+
+📝 Relative Links ➡️ links to other pages WITHIN our own website
+
+pages should be in the same directory but may run into some issue,
+for example, if the directory changes for one page so, best to do:
+
+<a href = "./pages/about.html"> About </a>
+           ⬆
+           specifying your code that it should start looking for the 
+           file/directory relative to current directory 
+
+
+<img src = "link" alt = "alternative text yjay describes an image">
+- no closing tag; instead of wrapping content with an open and close tag
+it embeds an image into the page using a src attribute which tells the
+browser where the image file is located.
+
+- works like href where it can embed an image using both absolute and
+relative path.
+
+<img src = "../images/dog.jpg">
+            ⬆
+            to use an image from other pages
