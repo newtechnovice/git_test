@@ -1,4 +1,4 @@
-✅ Foundation 
+✅ HTML Foundations
 Elements on an HTML page are just information wrapped in an 
 opening and closing HTML tags. 
 
@@ -90,3 +90,84 @@ relative path.
 <img src = "../images/dog.jpg">
             ⬆
             to use an image from other pages
+
+
+____________________________________________________________________________
+____________________________________________________________________________
+✅ CSS Foundations
+
+selector
+     ⬇
+     div.bold-text {
+         font-weight: 200;
+     }      ⬆          ⬆
+            property    value
+
+📝 <div> empty container </div> in general, it is best to use appropriate HTML
+elements for certain content.
+
+
+SELECTORS ➡️ refers to the HTML elements to which CSS rules are applied
+
+1. Universal selector (*)
+
+* {
+    color: purple;
+}
+
+Here every element will have color: purple style applied to it.
+
+2. Type selector/element selector - selets all elements of the given element type
+
+div {
+    color: white;
+}
+
+Here every <div> elements will have color: white style applied to it.
+
+3. Class selector - select elements with the given class (an attribute place on 
+an HTML element); same classes CAN BE USE on as many HTML elements
+
+In HTML file:
+    <div class = "alert-text another-class multiple-class">
+        content
+    </div>
+
+In CSS file:
+❗️ take note of the period
+    ⬇
+    .alert-text {
+        color: red;
+    }
+
+4. ID selector - select element with the given ID; element can only hae ONE ID,
+it cannot be repeated on a single page
+
+In HTML file:
+    <div id="title"> Title Here </div>
+
+In CSS file:
+❗️ take note of the hashtag
+    ⬇
+    #title {
+        background-color: red;
+    }
+
+5. Grouping selector
+selectors that share declarations can be grouped together separated by a comma to
+cut down repetition.
+
+.read,
+.unread {
+    color: white;
+}
+
+.read {
+    /* unique declarations */
+}
+
+.unread {
+    /* unique declarations */
+}
+
+6. Chaining selector
