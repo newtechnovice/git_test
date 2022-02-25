@@ -117,7 +117,7 @@ SELECTORS ➡️ refers to the HTML elements to which CSS rules are applied
 
 Here every element will have color: purple style applied to it.
 
-2. Type selector/element selector - selets all elements of the given element type
+2. Type selector/element selector - selects all elements of the given element type
 
 div {
     color: white;
@@ -231,3 +231,72 @@ and adjust width value
 
 height
 weight
+
+
+✅ Specificity (precedence)
+0. Inline styles 
+1. ID selectors (#)
+2. Class selectors (.)
+3. Type selectors
+
+When no declaration has a selector with a higher specificity, a larger amount of single
+selector will beat a smaller amount of that same selector example:
+
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+
+rule 2 is more specific therefore, it will take precedence.
+
+
+✅ Adding CSS to HTML
+
+💻 EXTERNAL:
+
+<!-- index.html -->
+
+    <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+/* styles.css */
+
+    div {
+    color: white;
+    background-color: black;
+    }
+
+    p {
+    color: red;
+    }
+
+
+💻 INTERNAL:
+
+<head>
+  <style>
+    div {
+      color: white;
+      background-color: black;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>...</body>
+
+
+💻 INLINE:
+
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body>
+
