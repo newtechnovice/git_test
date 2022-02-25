@@ -171,3 +171,63 @@ cut down repetition.
 }
 
 6. Chaining selector
+❗️ You cant chain more than one type selector since an element can't be two different
+types at once e.g. selectors like <div> and <p>
+
+applying a rule to a certain element with certain classes on it e.g. "subsection" and
+"header"
+
+In HTML file:
+    <div class = "subsection header">ONE</div>
+    <div class = "subsection preview">TWO</div>
+
+In CSS file:
+.subsection.header {
+    color: red;
+}
+
+❗️ .subsection.header selects any element that has BOTH the subsection and header classes
+❗️ take note of the lack of space between "subsection" and "header"..., like a chain
+
+
+❓ DESCENDANT COMBINATOR 
+- will only cause elements that match the last selector to be selected if they also 
+have an ancestor that matches the previous selector
+
+In HTML file:
+
+<div class="ancestor"> <!-- A -->
+  <div class="contents"> <!-- B -->
+    <div class="contents"> <!-- C -->
+    </div>
+  </div>
+</div>
+
+<div class="contents"></div> <!-- D -->
+
+In CSS file:
+
+.ancestor .contents {
+  /* some declarations */
+}
+
+In this example "contents" class B and C would be selected.
+
+
+✅ Properties 
+
+Accepts keywords (e.g. "red" or "transparent"), HEX, RGB, and HSL values:
+color
+background-color
+
+font-family
+text-align
+font-size
+font-weight - boldness of text (accepts keywords or numbers 1 to 1000 with 1000 being the boldest)
+
+Image:
+❗️ TIP: to adjust an image without causing it to lose proportions, use value "auto" for height
+and adjust width value
+
+height
+weight
